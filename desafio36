@@ -1,0 +1,15 @@
+valorDaCasa = float(input("Digite o valor da casa: "))
+salario = float(input("Digite o seu salário: "))
+anos = int(input("Em quantos anos pretende pagar a casa? "))
+
+prestacaoMensal = valorDaCasa / (anos * 12)
+
+if prestacaoMensal > salario * 0.3:
+    print("Desculpe, mas a prestação mensal excede 30% do seu salário. Portanto, o empréstimo foi negado.")
+    print("-" * 20)
+    print(f"Prestação mensal: R$ {prestacaoMensal}")
+
+else:
+    print("Empréstimo realizado com sucesso!")
+    print("-"*20)
+    print(f"Prestação mensal: R$ {round(prestacaoMensal)}")
