@@ -1,0 +1,12 @@
+num = int(input("Digite um número: "))
+print("Escolha a base de conversão: ")
+print("1 - Binário")
+print("2 - Octal")
+print("3 - Hexadecimal")
+convert = int(input(""))
+if convert == 1:
+    print(bin(num))
+elif convert == 2:
+    print(oct(num))
+else:
+    print(hex(num))
